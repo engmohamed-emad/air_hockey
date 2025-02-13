@@ -27,26 +27,26 @@ window = pyglet.window.Window(width=window_width, height=window_height, caption=
 
 
 #===============blue player=========================================================================================================
-player_red_image = pyglet.image.load("C:\\Users\\Mohamed Emad\\source\\repos\\dealing with pyglet\\my_images\\blue_player.png")
+player_red_image = pyglet.image.load(r"..\my_images\blue_player.png")
 player_red = pyglet.sprite.Sprite(player_red_image, x=start_x, y=window_height/2-player_height/2)
 player_red.scale=scale
 player_red_dx = speed_p
 player_red_dy = speed_p  
 #===============blue player=========================================================================================================
-player_blue_image = pyglet.image.load("C:\\Users\\Mohamed Emad\\source\\repos\\dealing with pyglet\\my_images\\red_player.png")
+player_blue_image = pyglet.image.load(r"..\my_images\red_player.png")
 player_blue = pyglet.sprite.Sprite(player_blue_image, x=window_width-player_width-start_x, y=window_height/2-player_height/2)
 player_blue.scale=scale
 player_blue_dx = speed_p
 player_blue_dy = speed_p
 #===============ball ==================================================================================================================
-ball_image=pyglet.image.load("C:\\Users\\Mohamed Emad\\source\\repos\dealing with pyglet\\my_images\\ball.png")
+ball_image=pyglet.image.load(r"..\my_images\ball.png")
 ball=pyglet.sprite.Sprite(ball_image,x=window_width/2-ball_width//2,y=window_height/2-ball_height//2)
 ball.scale=scale
 ball_dx = speed_b
 ball_dy = speed_b
 
 #=====================================================================================================================================
-background = pyglet.image.load("C:\\Users\\Mohamed Emad\\source\\repos\\dealing with pyglet\\my_images\\court.png")
+background = pyglet.image.load(r"..\my_images\court.png")
 keys = key.KeyStateHandler()
 window.push_handlers(keys)
 #================================================================================================================================
